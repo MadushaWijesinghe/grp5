@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/
+		
+		<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    />
+	</script>
+	
+	<Style>
+		/*Main banner*/
+
+		.mainbanner{
+		  padding: 15px;
+		  text-align: center;
+		  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/main.jpg");
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  position: relative;
+		  color: white;
+		  height: 280px; /* Some height */
+		  border-radius: 0px 0px 5px 5px;
+		  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+		}
+		.mainbanner-text h1{
+			font-size: 95px;
+			line-height: 80px;
+			text-shadow: 0 0 20px brown;
+			padding: 70px 0;
+			text-align: center;
+			color: transparent;
+			-webkit-text-stroke: 3px #fff;
+		}
+		
+		/*history*/
+		
+		.history-title h2{
+			font-size: 60px;
+			line-height: 40px;
+			text-shadow: 0 0 20px #ff003f ;
+			padding: 50px;
+			text-align: left;
+			color: #ff003f ;
+			-webkit-text-stroke: 2px #fff;
+		}
+		
+		.history-text p{
+			font-size: 20px;
+			line-height: 30px;
+			/*text-shadow: 0 0 20px blue;*/
+			padding: 25px 50px;
+			text-align: left;
+		}
+		
+			/*industry*/
+		
+		.industry-title h2{
+			font-size: 60px;
+			line-height: 40px;
+			text-shadow: 0 0 20px #b31b1b;
+			padding: 50px;
+			text-align: left;
+			color: #b31b1b;
+			-webkit-text-stroke: 2px #fff;
+		}
+		
+		.industry-text p{
+			font-size: 20px;
+			line-height: 30px;
+			/*text-shadow: 0 0 20px blue;*/
+			padding: 25px 50px;
+			text-align: left;
+		}
+		
+		/*places*/
+		
+		.places-title h2{
+			font-size: 50px;
+			line-height: 30px;
+			text-shadow: 0 0 20px blue;
+			padding: 10px 50px;
+			text-align: left;
+			color: blue;
+			-webkit-text-stroke: 2px #fff;
+		}
+		
+		.places-text p, ul{
+			font-size: 25px;
+			line-height: 30px;
+			/*text-shadow: 0 0 20px blue;*/
+			padding: 25px 50px;
+			text-align: left;
+		}
+	
+		
+		img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  border-radius: 5px;
+		}
+		div.desc {
+		  padding: 15px;
+		  text-align: center;
+		}
+		
+		/* Footer */
+		
+		footer{
+		  font-family: "Poppins" , sans-serif;
+		  position: relative;
+		  background: #1974d2;
+		  width: 100%;
+		  bottom: 0;
+		  left: 0;
+		  border-radius: 0 0 5px 5px;
+		}
+		footer::before{
+		  content: '';
+		  position: absolute;
+		  left: 0;
+		  top: 100px;
+		  height: 1px;
+		  width: 100%;
+		  background: #AFAFB6;
+		}
+		footer .content{
+		  max-width: 1250px;
+		  margin: auto;
+		  padding: 30px 40px 40px 40px;
+		}
+		footer .content .top{
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  margin-bottom: 50px;
+		}
+		.content .top .logo-details{
+		  color: #fff;
+		  font-size: 30px;
+		}
+		.content .top .media-icons{
+		  display: flex;
+		}
+		.content .top .media-icons a{
+		  height: 40px;
+		  width: 40px;
+		  margin: 0 8px;
+		  border-radius: 50%;
+		  text-align: center;
+		  line-height: 40px;
+		  color: #fff;
+		  font-size: 17px;
+		  text-decoration: none;
+		  transition: all 0.4s ease;
+		}
+		.top .media-icons a:nth-child(1){
+		  background: #4267B2;
+		}
+		.top .media-icons a:nth-child(1):hover{
+		  color: #4267B2;
+		  background: #fff;
+		}
+		.top .media-icons a:nth-child(2){
+		  background: #1DA1F2;
+		}
+		.top .media-icons a:nth-child(2):hover{
+		  color: #1DA1F2;
+		  background: #fff;
+		}
+		.top .media-icons a:nth-child(3){
+		  background: #E1306C;
+		}
+		.top .media-icons a:nth-child(3):hover{
+		  color: #E1306C;
+		  background: #fff;
+		}
+		.top .media-icons a:nth-child(4){
+		  background: #FF0000;
+		}
+		.top .media-icons a:nth-child(4):hover{
+		  color: #FF0000;
+		  background: #fff;
+		}
+		footer .content .link-boxes{
+		  width: 100%;
+		  display: flex;
+		  justify-content: space-between;
+		}
+		footer .content .link-boxes .box{
+		  width: calc(100% / 2 - 10px);
+		  list-style-type: none;
+		}
+		.content .link-boxes .box .link_name{
+		  color: #fff;
+		  font-size: 18px;
+		  font-weight: 400;
+		  margin-bottom: 10px;
+		  position: relative;
+		}
+		.link-boxes .box .link_name::before{
+		  content: '';
+		  position: absolute;
+		  left: 0;
+		  bottom: -1px;
+		  height: 2px;
+		  width: 50px;
+		  background: #fff;
+		}
+		content .link-boxes .box li{
+		  margin: 6px 0;
+		  list-style: none;
+		}
+		.content .link-boxes .box li a{
+		  color: #fff;
+		  font-size: 18px;
+		  font-weight: 400;
+		  text-decoration: none;
+		  opacity: 0.8;
+		  transition: all 0.4s ease;
+		}
+		.content .link-boxes .box li a:hover{
+		  opacity: 1;
+		  text-decoration: underline;
+		}
+		footer .bottom-details{
+		  width: 100%;
+		  background: #0247fe;
+		  
+		}
+		footer .bottom-details .bottom_text{
+		  max-width: 1250px;
+		  margin: auto;
+		  padding: 20px 40px;
+		  display: flex;
+		  justify-content: space-between;
+		}
+		.bottom-details .bottom_text span,
+		.bottom-details .bottom_text a{
+		  font-size: 14px;
+		  font-weight: 300;
+		  color: #fff;
+		  opacity: 0.8;
+		  text-decoration: none;
+		}
+		.bottom-details .bottom_text a:hover{
+		  opacity: 1;
+		  text-decoration: underline;
+		}
+		.bottom-details .bottom_text a{
+		  margin-right: 10px;
+		}
+		@media (max-width: 900px) {
+		  footer .content .link-boxes{
+			flex-wrap: wrap;
+		  }
+		  footer .content .link-boxes{
+			width: 40%;
+			margin-top: 10px;
+		  }
+		}
+
+		@media (max-width: 700px){
+		  footer{
+			position: relative;
+		  }
+		  .content .top .logo-details{
+			font-size: 26px;
+		  }
+		  .content .top .media-icons a{
+			height: 35px;
+			width: 35px;
+			font-size: 14px;
+			line-height: 35px;
+		  }
+		  footer .content .link-boxes .box{
+			width: calc(100% / 3 - 10px);
+		  }
+		  footer .content .link-boxes .input-box{
+			width: 60%;
+		  }
+		  .bottom-details .bottom_text span,
+		  .bottom-details .bottom_text a{
+			font-size: 12px;
+		  }
+		}
+		@media (max-width: 520px){
+		  footer::before{
+			top: 145px;
+		  }
+		  footer .content .top{
+			flex-direction: column;
+		  }
+		  .content .top .media-icons{
+			margin-top: 16px;
+		  }
+		  footer .content .link-boxes .box{
+			width: calc(100% / 2 - 10px);
+		  }
+		  footer .content .link-boxes{
+			width: 100%;
+		  }
+		}
+	</Style>
+	
+		<title>Wood Carving in Sri Lanka</title>
+	</head>
+	
+	<body>
+		
+		<!-- Content section -->
+		<div class="wood-carving">
+		
+		<!-- Main banner -->
+		<div class="mainbanner">
+				<div class="mainbanner-text">
+					<h1>Wood Carving in Sri Lanka</h1>
+				</div>
+			</div>
+			</br>
+			
+		<div class="history">
+			<div class="history-title">
+				<h2>History and Spread of engraving</h2>
+				
+				<div class="history-text">
+				<p>The carving industry in Sri Lanka has a rich history 
+				spanning centuries. According to past beliefs, the industry 
+				became very popular after the journey of the monk Arahath Mahinda who 
+				brought Buddhism to Sri Lanka. A fact that proves it well is the use of 
+				different types of carving for all temples built in Sri Lanka/ Ambakke 
+				temple is prominent among them. While various types of caving can be seen 
+				in Sri Lanka, wood carvings are the most commonly created a fact that can be 
+				seen by anyone traveling Sri Lanka. We can see how these wooden carvings, which 
+				were made based on temples in the past, have been used for home decoration today. 
+				We can see how these carvings are also used for the houses' furniture, doors, and windows.
+				</p>
+			</div>
+		</div>
+			<img src="img/history.jpg" alt="Buddha statue" style="width:50%">
+			<div class="desc"><i>Wood carved buddhist art work</i></div>
+		</div>
+		</br>
+		
+		<div class="industry">
+			<div class="industry-title">
+				<h2>Wood Carving Industry in Sri Lanka</h2>
+				
+				<div class="industry-text">
+				<p>Every tourist that visits Sri Lanka is in love with the majestic and beautiful 
+				elephant, and they will not fail to carry with them a small souvenir of an elephant 
+				back home. This is where the wood carvings come in. The wooden elephant is part of 
+				our culture and amazing heritage. These beautifully carved elephants come in striking 
+				designs and poses. They are lovingly smoothed and lacquered according to its wood. On 
+				the other hand; they come in various sizes from small to medium and large and huge massive ones too.
+				</br></br>
+				The most sought after wooden elephant is the black ebony elephant that stands majestically gleaming 
+				in its shiny black wood. It is just made as a sculptor of a wooden elephant ornament, or book ends, 
+				or shaped into vases or table and mantle ornaments and various types of woods are used to carve out 
+				these magnificent animals. The most expensive being the black ebony wooden crafts.
+				</br></br>
+				You can find these wooden carvings in any reputed tourist shop, the famous being the government owned Laksala 
+				center. Here you can buy a wooden elephant which will cost you a few bucks. Some elephants are magnificently 
+				decorated with beads and ornaments to depict the elephant as an Esela Perahera elephant. Some are beautifully 
+				painted, these can be bought for a nominal price Wooden Elephant Sri Lanka so don’t forget to grab onto a wooden 
+				elephant for your souvenir collection or gift for someone back home. They will simply love it.
+				</p>
+			</div>
+		</div>
+			<img src="img/3.jpg" alt="Wood carved elephant" style="width:40%">
+			<div class="desc"><i>Wood carved elephant</i></div>
+			
+			<img src="img/1.jpg" alt="Wood carved sculptures" style="width:40%">
+			<div class="desc"><i>Wood carved collection of sculptures</i></div>
+			
+			<img src="img/2.jpg" alt="Wood carved buddhist statues" style="width:40%">
+			<div class="desc"><i>Wood carved collection of buddhist statues</i></div>
+		</div>
+		</br>
+		
+		<div class="places">
+			<div class="places-title">
+				<h2>Places where you can find wood carvings in Sri Lanka</h2>
+				
+				<div class="places-text">
+				<p>
+				<ul>
+				<li><b>In Buddhist temples</b></li>
+					<ul> 
+					<li>Embekka temple near Kandy, Sri Lanka</li>
+					</br>
+					<img src="img/temple.jpg" alt="ancient wood carving" style="width:30%">
+					<div class="desc"><i style="font-size: 15px">Famous ancient wood carvings at Embekke Temple</i></div>
+					
+					<details>
+					
+					<Summary><i>Click here to see the location</i></summary>
+			 
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.2006048895987!2d80.5651361736956!3d7.2179443927878735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae36ef317bb65e5%3A0x6787aeef212af953!2sEmbekka%20Dewalaya!5e0!3m2!1sen!2sjp!4v1689897783567!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
+					</details>
+					</ul>
+				<li><b>In antiques shops</b></li>
+					<ul> 
+					<li>You can find traditional wood carvings at antiques shops in Sri Lanka</li>
+					</br>
+					<img src="img/antique.jpg" alt="antiques shops" style="width:40%">
+					<div class="desc"><i style="font-size: 15px">Traditional wood carvings displayed antique shop in Sigiriya</i></div>
+					
+				
+					</ul>
+					
+				</ul>
+				</p>
+			</div>
+				
+	
+		</div>
+		</div>
+		</br>
+		</div>
+			
+		<!-- footer Section -->
+        <footer>
+		<div class="content">
+		  <div class="top">
+			<div class="logo-details">
+			  <span class="logo_name">Wood Carving in Sri Lanka</span>
+			</div>
+			<div class="media-icons">
+			  <a href="#"><i class="fab fa-facebook-f"></i></a>
+			  <a href="#"><i class="fab fa-twitter"></i></a>
+			  <a href="#"><i class="fab fa-instagram"></i></a>
+			  <a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		  </div>
+		  <div class="link-boxes">
+			
+			<ul class="box">
+			  
+			  <li><a href="#"><b>Gihan Madushan</b></a></li>
+			  <li><a href="#"><b>M22W7195</b></a></li>
+			  
+			</ul>
+			
+		  </div>
+		</div>
+		<div class="bottom-details">
+		  <div class="bottom_text">
+			<span class="copyright_text">Gihan Madushan  <a href="#">gsmadushan8@gmail.com</a> 090-4280-5064</span>
+		  </div>
+		</div>
+		
+		</footer>
+	</body>
+</html>

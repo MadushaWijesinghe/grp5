@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Web Programming -   Group Project </title>
+
+
+<style>
+
+header{
+
+ background-image: url("https://3.bp.blogspot.com/-Pjb3jVnnorc/UYOA0gL2i7I/AAAAAAAAAMw/ffIremOMSO4/s1600/4663486778_49153cd2d2_z.jpg");
+ background-position: center;
+background-repeat: no repeat;
+background-size: cover;
+height:500px;
+}
+
+h1{
+
+  background-image: linear-gradient(120deg, #e5ea15, #00c4ff);
+  width:35%;
+  font-size: 30px;
+  font-family: arial;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px blue;
+  padding:15px 10px 15px 10px;
+  border-radius: 25px;
+  transition: width 1s linear, height 1s linear;
+  position: relative;
+  top: 50px;
+  left: 20px;
+ }
+ 
+ 
+h1:hover{
+  color: red; 
+  width: 300px;
+  height: 100px;
+}
+
+ @font-face{
+	src:url("fonts/Pacifico-Regular.ttf");
+	font-family :Pacifico;
+	}
+	
+	@font-face{
+	src:url("fonts/Quicksand.ttf");
+	font-family :Quicksand;
+}
+
+.card {
+      width: 300px;
+	  height:500px;
+      border-radius: 5px;
+	   border: 2px solid blue;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	   background-color: #FFCC0050;
+	   position:relative;
+
+    }
+ .card:hover {
+      box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.3);
+	  }
+	  
+	  
+    img {
+		width:100%;
+      border-radius: 5px 5px 0 0;
+	  
+    }
+
+.card  img:hover {
+
+  transform: scale(1.05);
+  filter: grayscale(50%);
+}
+    .container {
+      padding: 12px;
+	 
+	  	  	  
+    }
+	
+	 .container h3 {
+      position: static;
+      bottom: 50px;
+      right: 10px;
+      color: red;
+      text-transform: Uppercase;
+	  font-family: Pacifico;
+      font-size: 25px;
+	  text-align:center;
+      letter-spacing: 3px;
+      text-shadow: 0 2px 2px rgba(0, 3, 5, 0.8);
+    }
+	
+	.container p {
+	font-family :Quicksand;
+	}
+	
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+	 }
+	 
+	 h2{
+	 font-family: Pacifico;
+      font-size: 38px;
+	  text-align:left;
+      letter-spacing: 3px;
+      text-shadow: 0 2px 2px rgba(10, 13, 5, 0.8);
+	  color:rgba(242, 249, 10, 0.9);
+	  background-color:rgba(149, 90, 4, 0.8);
+	  width: 50%;
+	  animation-name: heading;
+	  animation-duration: 6s;
+
+	 }
+	 
+	 @keyframes heading {
+	0%{background-color: rgba(149, 90, 4, 0.8); font-size:20px;}
+	25% {background-color: rgba(17, 119, 3, 0.8); font-size:30px;}
+	50%{background-color: rgba(216, 3, 28, 0.8); font-size:40px;}
+	75% {background-color: rgba(202, 3, 146, 0.8); font-size:50px;}
+	100%{background-color: rgba(21, 3, 202, 0.8); font-size:60px;}
+	}	
+
+	.map{
+		width:300px;
+		height:300px;
+		padding:40px;
+	}
+	
+.map:hover{
+	transform: scale(2);
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+	.watch{
+	padding: 20px;
+	}
+	 
+	 .fancy{
+	 font-family: Quicksand, Arial, Helvetica, sans-serif;
+	 font-size: 20px;
+	 line-height: 1.5;
+	letter: 1.2;
+	 
+	 }
+.footer{
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	animation-name: footer;
+	animation-duration: 4s;
+	}
+	
+ @keyframes footer {
+	from{background-color: magenta; font-size:20px;}
+	to {background-color: lightblue; font-size:40px;}
+	
+	}	
+
+</style>
+
+
+</head>
+
+<body>
+  
+  <header>
+    <div class="heading">
+    <h1>Brass Crafts in Sri Lanka </h1>
+   </div>
+  </header>
+  
+  
+  &nbsp &nbsp &nbsp &nbsp
+  
+  <div class="introduction">
+  <div class="row1">
+  <h2> Brass Crafts Industry </h2>
+</div>
+<div class="row2">
+    <p class="fancy">
+        Areas such as Pilimatalawa and Kiriwavula in Kandy are best known for their silver and brass works. These brass and silver items are used to decorate temple buildings, furniture and various items such as Statues, Sword handles, jewellery and lamps. </p>
+
+<p class="fancy">
+To make these products even more attractive, local craftsmen engrave the brassware with Traditional Sinhala ornaments such as Liyawel, Bherunda Pakshiya, Hansa Puttuwa, Ira handa, Palapethi, Nelum Pethi. The brassware items available today are wide and varied and includes oil lamps, trays, bowls, vases, betel holders, jewellery boxes, letter openers, bottle openers and candle holders.
+    </p>
+</div>
+</div>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+<h2> Items in Store </h2> 
+<div class="main-container">
+
+<div class="card">
+<img src="images/Budda2.jpg" alt= "Lord Budda"/>
+
+ <div class="container">
+ 
+<h3> <b>Lord Budda  </b></h3>
+<p> Different sizes are available.  </p>
+</div>
+</div>
+  	
+	
+
+<div class="card">
+
+
+<img src="images/Karanduwa.jpg" alt= "Karanduwa"/>
+
+
+<div class="container">
+
+<h3> <b> Karanduwa </b> </h3>
+</div>
+
+ </div>
+
+ 
+<div class="card">
+
+<img src="images/pathra.jpg" alt= "pathra"/>
+
+<div class="container">
+<h3> <b> Pathra </b> </h3>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="images/cock.jpg" alt= "cock-lamp"/>
+
+<div class="container">
+<h3> <b> Cock-lamp </b> </h3>
+</div>
+</div>
+</div>
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+<div class="main-container">
+<div class="card">
+
+<img src="images/punkalasa.jpg" alt= "Punkalasa"/>
+
+<div class="container">
+<h3> <b> Punkalasa </b> </h3>
+</div>
+</div>
+
+<div class="card">
+<img src="images/candle.jpg" alt= "candle-holder"/>
+<div class="container">
+<h3> <b> Candle-holder </b> </h3>
+</div>
+</div>
+
+<div class="card">
+<img src="images/statue.jpg" alt= "Statue"/>
+<div class="container">
+<h3> <b> Statue </b> </h3>
+</div>
+</div>
+
+<div class="card">
+<img src="images/bridal_set.jpg" alt= "bridal-jewellaries"/>
+<div class="container">
+<h3> <b> Jewellaries </b> </h3>
+</div>
+</div>
+
+</div>
+
+<div class="main-location">
+
+<h2> Brass Handicraft Shops </h2>
+
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253500.0676416319!2d79.55571219453125!3d6.897952499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd87d9f4471%3A0xb96349053bae919d!2sLaksala!5e0!3m2!1sen!2sjp!4v1689862106342!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253299.13348437395!2d80.25104679453128!3d7.2637061000000145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3692e511406f9%3A0x75073a65a11595ce!2sKavindu%20Pittala%20Banda%20Brassware%20shop!5e0!3m2!1sen!2sjp!4v1689862372137!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253299.13348437395!2d80.25104679453128!3d7.2637061000000145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae367f91bcd01ed%3A0xf42cd2624bb5ea0d!2sKing%20Kandyan%20Brass!5e0!3m2!1sen!2sjp!4v1689862423872!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+</div>
+
+<div class="video">
+<h2> Watch </h2>
+  
+  <iframe class="watch" width="560" height="315" src="https://www.youtube.com/embed/XEBhVz1wx24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+  picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="watch" width="560" height="315" src="https://www.youtube.com/embed/0Vo-saLz-M8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+  </div>
+  
+<footer> 
+	<div class="footer"> Our expectation is your satisfaction. It is a great pleasure to serve you with the best quality product.</div>
+</footer>  
+  
+</body>
+</html>
